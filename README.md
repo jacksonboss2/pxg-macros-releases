@@ -27,6 +27,9 @@ Dê dois cliques no ícone da bandeja para configurar. Atalhos, teclas das skill
 intervalos são personalizáveis. Use a mesma tecla do item Revive no jogo, com
 **Uso rápido**. O painel é detectado automaticamente; a conferência é opcional.
 
+Para escolher ponto e vírgula (;) ou outra tecla, clique no botão ⌨ ao lado do campo,
+pressione e solte a tecla desejada e clique em **Salvar ajustes**. As listas continuam disponíveis.
+
 O combo executa 1→9 uma vez por aperto de Space. Habilitar só prepara o macro;
 configure a tecla em Auto combo → Executar auto combo · 1×. Segurar não repete.
 Durante o Revive, ele espera e retoma da próxima skill. Enter, Esc, sair do jogo ou abrir
