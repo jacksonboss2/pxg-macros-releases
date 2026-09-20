@@ -30,27 +30,33 @@ intervalos são personalizáveis. Use a mesma tecla do item Revive no jogo, com
 Para escolher ponto e vírgula (;) ou outra tecla, clique no botão ⌨ ao lado do campo,
 pressione e solte a tecla desejada e clique em **Salvar ajustes**. As listas continuam disponíveis.
 
-O combo executa 1→9 uma vez por aperto do atalho escolhido. Habilitar só prepara
-o macro; configure a tecla em **Auto combo → Executar auto combo · 1×**.
-Segurar não repete, e apertos durante execução não ficam em fila. Durante o
-Revive, ele espera e retoma da próxima skill.
-
-Cada tecla fica pressionada por 80 ms. O intervalo inicial entre skills é
-1200 ms e continua configurável. O botão **Usar 1200 ms** aplica esse ritmo;
-clique em **Salvar ajustes** para gravar. Atualizações preservam intervalos já salvos.
-Cooldown, alvo e condições do jogo ainda determinam se a skill pode ser usada.
-
-**Enter libera a digitação no chat**, inclusive Espaço como atalho do Revive.
-Durante a conversa, os macros não enviam comandos. **Esc devolve os atalhos**,
-sem mudar o liga/desliga. Enviar outra mensagem com Enter mantém a proteção.
-Use Enter para entrar no chat: clicar no campo sozinho não ativa essa proteção.
-
-Enter, Esc, trocar de janela ou abrir as configurações cancelam a sequência
-atual do combo, mantendo-o habilitado para um novo aperto. O liga/desliga fica
-no atalho configurado, inicialmente **Ctrl+Alt+F6**.
-
-O anti-AFK alterna A/D a cada minuto e cede aos outros macros. Combo e anti-AFK
-sempre começam desligados. Após atualizar, o Revive também reinicia pausado.
+O auto combo executa 1→9 uma vez por aperto, pulando slots desativados.
+Habilitar só prepara o macro: pressione e solte a tecla de execução para combar.
+Segurar a tecla não repete, e apertos durante execução não ficam em fila.
+A tecla fica reservada ao combo no jogo enquanto habilitado; pode ser Space,
+mesmo se o item Revive usar Space. O disparo do Revive deve ser outra tecla.
+Pausa durante o Revive e ao segurar modificadores, retomando da próxima skill.
+**Não use Espaço para executar o Revive:** quando habilitado, o macro reserva
+essa tecla e impede os espaços no chat. Escolha outra tecla ou botão do mouse.
+Isso se refere ao atalho que executa o macro, não à tecla do item dentro do jogo.
+Enter e Esc não ativam, pausam nem cancelam macros. Não há detecção de chat;
+use os atalhos de ativação para pausar antes de conversar.
+Sair do jogo ou abrir o menu cancela somente a sequência atual; o combo continua
+habilitado para um novo aperto. Nenhum aperto antigo é reproduzido ao voltar.
+O liga/desliga fica no atalho configurado (padrão Ctrl+Alt+F6).
+Cada tecla fica pressionada por 80 ms, com pelo menos 40 ms solta entre apertos.
+**Rápido · 4 apertos** envia cada skill quatro vezes antes de avançar, com
+intervalo mínimo configurado de 100 ms. Os apertos e suas liberações levam mais
+tempo: são pelo menos 480 ms entre slots (cerca de 4,28 s nominais para nove slots).
+**Estável · 1200 ms** usa um aperto por skill. Os presets só alteram o ritmo;
+clique em **Salvar ajustes** para gravar. O intervalo e a quantidade de apertos
+(1 a 8) são configuráveis. A próxima skill espera todos os apertos da anterior;
+atrasos do Windows podem aumentar a duração, nunca comprimir os apertos.
+Atualizações preservam intervalos e mantêm um aperto quando não havia repetições salvas.
+O programa envia as teclas; cooldown, alvo e condições do jogo ainda determinam
+se o ataque pode ser usado. Envio aceito pelo Windows não comprova uso da skill.
+O anti-AFK alterna A/D a cada minuto e cede aos outros macros. Ambos começam OFF.
+Após uma atualização o Revive também reinicia pausado.
 
 Os ajustes ficam em `%LOCALAPPDATA%\PXG Macros\settings.json` para cada usuário
 do Windows. O botão **Meus ajustes** abre essa pasta.
