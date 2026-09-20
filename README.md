@@ -30,12 +30,27 @@ intervalos são personalizáveis. Use a mesma tecla do item Revive no jogo, com
 Para escolher ponto e vírgula (;) ou outra tecla, clique no botão ⌨ ao lado do campo,
 pressione e solte a tecla desejada e clique em **Salvar ajustes**. As listas continuam disponíveis.
 
-O combo executa 1→9 uma vez por aperto de Space. Habilitar só prepara o macro;
-configure a tecla em Auto combo → Executar auto combo · 1×. Segurar não repete.
-Durante o Revive, ele espera e retoma da próxima skill. Enter, Esc, sair do jogo ou abrir
-as configurações desliga o combo. O anti-AFK alterna A/D a cada minuto e cede aos
-outros macros. Combo e anti-AFK sempre começam desligados. Após atualizar, o
-Revive também reinicia pausado.
+O combo executa 1→9 uma vez por aperto do atalho escolhido. Habilitar só prepara
+o macro; configure a tecla em **Auto combo → Executar auto combo · 1×**.
+Segurar não repete, e apertos durante execução não ficam em fila. Durante o
+Revive, ele espera e retoma da próxima skill.
+
+Cada tecla fica pressionada por 80 ms. O intervalo inicial entre skills é
+1200 ms e continua configurável. O botão **Usar 1200 ms** aplica esse ritmo;
+clique em **Salvar ajustes** para gravar. Atualizações preservam intervalos já salvos.
+Cooldown, alvo e condições do jogo ainda determinam se a skill pode ser usada.
+
+**Enter libera a digitação no chat**, inclusive Espaço como atalho do Revive.
+Durante a conversa, os macros não enviam comandos. **Esc devolve os atalhos**,
+sem mudar o liga/desliga. Enviar outra mensagem com Enter mantém a proteção.
+Use Enter para entrar no chat: clicar no campo sozinho não ativa essa proteção.
+
+Enter, Esc, trocar de janela ou abrir as configurações cancelam a sequência
+atual do combo, mantendo-o habilitado para um novo aperto. O liga/desliga fica
+no atalho configurado, inicialmente **Ctrl+Alt+F6**.
+
+O anti-AFK alterna A/D a cada minuto e cede aos outros macros. Combo e anti-AFK
+sempre começam desligados. Após atualizar, o Revive também reinicia pausado.
 
 Os ajustes ficam em `%LOCALAPPDATA%\PXG Macros\settings.json` para cada usuário
 do Windows. O botão **Meus ajustes** abre essa pasta.
