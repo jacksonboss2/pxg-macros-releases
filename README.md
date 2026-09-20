@@ -19,14 +19,17 @@ Depois da primeira instalação, o programa avisa quando houver update. Abra
 | Executar Revive | F6, ou o atalho importado da V4 |
 | Ativar/pausar Revive | Ctrl+Alt+F8 |
 | Ativar/pausar anti-AFK | Ctrl+Alt+F7 |
-| Ativar/pausar auto combo | Ctrl+Alt+F6 |
+| Habilitar/pausar auto combo | Ctrl+Alt+F6 |
+| Executar auto combo uma vez | Space (configurável) |
 | Sair | Ctrl+Alt+F11 |
 
 Dê dois cliques no ícone da bandeja para configurar. Atalhos, teclas das skills e
 intervalos são personalizáveis. Use a mesma tecla do item Revive no jogo, com
 **Uso rápido**. O painel é detectado automaticamente; a conferência é opcional.
 
-O combo repete 1→9 e espera o Revive terminar. Enter, Esc, sair do jogo ou abrir
+O combo executa 1→9 uma vez por aperto de Space. Habilitar só prepara o macro;
+configure a tecla em Auto combo → Executar auto combo · 1×. Segurar não repete.
+Durante o Revive, ele espera e retoma da próxima skill. Enter, Esc, sair do jogo ou abrir
 as configurações desliga o combo. O anti-AFK alterna A/D a cada minuto e cede aos
 outros macros. Combo e anti-AFK sempre começam desligados. Após atualizar, o
 Revive também reinicia pausado.
